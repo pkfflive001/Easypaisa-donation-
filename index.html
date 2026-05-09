@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Us With Mini Donation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #6b46c1, #9f7aea);
+            color: white;
+            min-height: 100vh;
+            padding: 15px 10px;
+            text-align: center;
+        }
+        
+        .card {
+            max-width: 420px;
+            margin: 20px auto;
+            background: rgba(255,255,255,0.95);
+            color: #333;
+            border-radius: 20px;
+            padding: 30px 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            background: #7c3aed;
+            color: white;
+            margin: -30px -20px 25px;
+            padding: 25px 20px;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .money-bag {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            font-size: 17px;
+            margin: 15px 0;
+            line-height: 1.4;
+        }
+        
+        .number-box {
+            background: white;
+            border: 3px solid #6b46c1;
+            border-radius: 12px;
+            padding: 18px;
+            font-size: 26px;
+            font-weight: bold;
+            margin: 25px 0;
+            color: #1e2937;
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            margin: 12px 0;
+            border: none;
+            border-radius: 50px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        .btn-copy {
+            background: #eab308;
+            color: #1e2937;
+        }
+        
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+        
+        .how-to {
+            margin-top: 30px;
+            text-align: left;
+            background: #6b46c1;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        
+        .how-to h2 {
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .thank-you {
+            margin-top: 25px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+        footer {
+            margin-top: 30px;
+            font-size: 15px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <div class="money-bag">💰</div>
+            <h1>Help Us With Mini Donation</h1>
+        </div>
+
+        <p class="subtitle">Your small contribution means a lot <span style="color:#ff4d4d;">❤️</span></p>
+
+        <div class="number-box">
+            0331-6124387
+        </div>
+
+        <a href="#" onclick="copyNumber()" class="btn btn-copy">
+            📋 Copy Number
+        </a>
+        
+        <a href="https://wa.me/923316124387" target="_blank" class="btn btn-whatsapp">
+            📱 Share on WhatsApp
+        </a>
+
+        <div class="how-to">
+            <h2>How to Send Money:</h2>
+            <ol>
+                <li><strong>EasyPaisa:</strong> Open EasyPaisa App or Dial <strong>*247#</strong></li>
+                <li><strong>JazzCash:</strong> Open JazzCash App or Dial <strong>*786#</strong></li>
+                <li>Select <strong>Send Money → To Mobile Account</strong></li>
+                <li>Enter Number: <strong>03316124387</strong></li>
+                <li>Enter any amount you want</li>
+                <li>Confirm with MPIN</li>
+            </ol>
+        </div>
+
+        <div class="thank-you">
+            Thank You Very Much! 🙏
+        </div>
+        
+        <footer>
+            Made with ❤️ for a good cause
+        </footer>
+    </div>
+
+    <script>
+        function copyNumber() {
+            navigator.clipboard.writeText("03316124387").then(() => {
+                alert("✅ Number copied successfully!");
+            });
+        }
+    </script>
+</body>
+</html>
